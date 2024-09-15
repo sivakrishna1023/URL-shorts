@@ -24,7 +24,7 @@ export default function Container() {
       {errMsg && <p className={styles.err}>{errMsg}</p>}
 
       {!isLoading && !errMsg && fetchedData && (
-        <Table full={fetchedData.full} short={fetchedData.short} />
+        <Table fullurl={fetchedData.fullurl} short={fetchedData.short} />
       )}
     </div>
   );
